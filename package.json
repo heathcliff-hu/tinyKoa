@@ -1,0 +1,31 @@
+{
+  "name": "tinykoa",
+  "version": "1.0.0",
+  "description": "精简的koa实现",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "bench": "make -C benchmarks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heathcliff-hu/tinyKoa.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "Heathcliff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heathcliff-hu/tinyKoa/issues"
+  },
+  "homepage": "https://github.com/heathcliff-hu/tinyKoa#readme",
+  "dependencies": {
+    "mime-types": "^2.1.18",
+    "statuses": "^1.5.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}
