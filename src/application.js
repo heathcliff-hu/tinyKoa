@@ -1,10 +1,10 @@
 const EventEmitter = require("events");
 const http = require("http");
+const Stream = require("stream");
 
 const context = require("./context");
 const request = require("./request");
 const response = require("./response");
-const Stream = require("stream");
 
 module.exports = class Application extends EventEmitter {
   /**

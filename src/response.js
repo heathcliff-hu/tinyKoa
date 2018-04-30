@@ -11,9 +11,7 @@ module.exports = {
      */
   get header() {
     const { res } = this;
-    return typeof res.getHeaders === "function"
-      ? res.getHeaders()
-      : res._headers || {}; // Node < 7.7
+    return res.getHeaders();
   },
 
   /**
@@ -44,7 +42,7 @@ module.exports = {
      */
   set body(data) {
     // no content
-    if (data == null) {
+    if (!data) {
       if (!statuses.empty[this.status]) this.status = 204;
       this.remove("Content-Type");
       this.remove("Content-Length");
